@@ -1,0 +1,3 @@
+[submodule "app/lib/managers"]
+	path = app/lib/managers
+	url = https://imobicloud@github.com/imobicloud/managers.git

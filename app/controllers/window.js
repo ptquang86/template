@@ -1,2 +1,13 @@
-// Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
+
+exports.load = function() {};
+
+exports.unload = function() {};
+
+function goBack() {
+    Alloy.Globals.WinManager.loadPrevious();
+}
+
+function showProfile() {
+    alert('TODO: showProfile');
+}

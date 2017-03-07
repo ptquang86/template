@@ -1,4 +1,18 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window class="win nav-visible nav-button nav-title" title="TODO">
+
+		<!--  -->
+		<LeftNavButton class="button-back" onClick="goBack" platform="ios"/>
+		<RightNavButton class="button-profile" onClick="showProfile" platform="ios"/>
+		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="goBack" platform="android"/>
+		<Menu platform="android">
+			<MenuItem class="button-profile" onClick="showProfile"/>
+		</Menu>
+
+		<!--  -->
+		<ScrollView class="scroller">
+
+		</ScrollView>
+
+	</Window>
 </Alloy>

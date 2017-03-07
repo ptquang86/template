@@ -1,4 +1,4 @@
+".button-profile[platform=ios]": { image: '/images/TODO.png' }
+".button-profile[platform=android]": { icon: '/images/TODO.png' }
 
-".container" : {
-  
-}
+".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }

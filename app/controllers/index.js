@@ -1,5 +1,43 @@
-function doClick(e) {
-    alert($.label.text);
-}
+init();
 
-$.index.open();
+function init() {
+    var oWindowManager = require('managers/window'),
+        winManager = new oWindowManager();
+    OS_ANDROID && winManager.on('window:exit', exitConfirm);
+    Alloy.Globals.WinManager = winManager;
+
+    // load UI
+    if (0) {
+        Alloy.Globals.WinManager.load({
+            url: 'home',
+            data: {
+                url: 'home/page',
+                data: {}
+            },
+            reset: true
+        });
+    } else {
+        Alloy.Globals.WinManager.load({
+            url: 'window',
+            reset: true
+        });
+    }
+};
+
+function exitConfirm() {
+    Alloy.Globals.WinManager.exit();
+    /*
+    var dialog = Ti.UI.createAlertDialog({
+        cancel: 0,
+        buttonNames: ['NO', 'YES'],
+        title: 'Quit?',
+        message: 'Are you sure?',
+    });
+    dialog.addEventListener('click', function(e) {
+        if (e.index !== e.source.cancel) {
+            Alloy.Globals.WinManager.exit();
+        }
+    });
+    dialog.show();
+	*/
+}
