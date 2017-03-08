@@ -1,0 +1,40 @@
+<Alloy>
+	<Collection id="collection" src="info" instance="true"/>
+	<ListView id="lv" class="lv lv-separator" defaultItemTemplate="template">
+        <Templates>
+            <ItemTemplate name="template" class="li li-notselectable">
+                <ImageView bindId="icon" class="icon"/>
+                <Label bindId="title" class="title"/>
+                <Label bindId="subtitle" class="subtitle"/>
+            </ItemTemplate>
+        </Templates>
+
+		<!--
+        <ListSection>
+            <HeaderView><View class="shv"><Label class="shv-label">Alerts</Label></View></HeaderView>
+            <ListItem title:text="Carrot" subtitle:text="Zanahoria" icon:image="/carrot.png"/>
+            <ListItem title:text="Potato" subtitle:text="Patata" icon:image="/potato.png"/>
+        </ListSection>
+		-->
+
+        <ListSection dataCollection="$.collection"
+        	dataFilter="doFilter" dataTransform="doTransform" dataFunction="reloadUI">
+			<ListItem
+            	itemId="{id}"
+            	template="{template}"
+            	searchableText="{title}"
+            	icon:image="{image}"
+            	title:text="{title}"
+            	subtitle:text="{subtitle}"
+            	/>
+        </ListSection>
+
+		<!--  
+		<SearchBar class="searchbar" platform="ios"/>
+      	<SearchView class="searchbar" ns="Ti.UI.Android" platform="android"/>
+		-->
+
+        <HeaderView><View class="hv"/></HeaderView>
+        <FooterView><ActivityIndicator id="ai" class="ai"/></FooterView>
+    </ListView>
+</Alloy>

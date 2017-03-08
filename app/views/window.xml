@@ -10,9 +10,8 @@
 		</Menu>
 
 		<!--  -->
-		<ScrollView class="scroller">
-
-		</ScrollView>
+		<!-- <ScrollView class="scroller"></ScrollView> -->
+		<Require id="listview" class="listview" src="ui/listview"/>
 
 	</Window>
 </Alloy>
