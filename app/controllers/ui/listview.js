@@ -2,7 +2,8 @@ var args = $.args;
 
 init();
 function init() {
-
+	var exclude = ['id', 'children'];
+	$.lv.applyProperties(_.omit(args, exclude));
 }
 
 exports.load = function(data) {
