@@ -1,3 +1,6 @@
 [submodule "app/lib/managers"]
 	path = app/lib/managers
 	url = https://imobicloud@github.com/imobicloud/managers.git
+[submodule "app/lib/iconfont"]
+	path = app/lib/iconfont
+	url = https://ptquang86@github.com/ptquang86/iconfont.git
