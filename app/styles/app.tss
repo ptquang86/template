@@ -36,11 +36,11 @@
 		".li": { backgroundColor: 'transparent' }
         ".li-selectable[platform=ios]": { selectedBackgroundColor: '#d6d6d6', selectedColor: '#000' }
         ".li-notselectable[platform=ios]": { selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE }
-			".title": { left: 16, right: 16, color: '#000', font: { fontSize: 16 } }
+			".title": { left: 16, right: 16, color: '#000', font: { fontSize: 16, fontFamily: 'Roboto-Regular' } }
 
 	".txt-wrapper": {  }
 	".txt-wrapper[platform=ios]": { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
-		".txt": { color: '#000', font: { fontSize: 14 }, backgroundColor: 'transparent', padding: { left: 0, right: 0 } }
+		".txt": { color: '#000', font: { fontSize: 14, fontFamily: 'Roboto-Regular' }, backgroundColor: 'transparent', padding: { left: 0, right: 0 } }
 		".txt[platform=android]": { softKeyboardOnFocus: Titanium.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS }
 		".txt-textfield": { height: 52, left: 10, right: 10 }
 		".txt-textfield[platform=ios]": { clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS }

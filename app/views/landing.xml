@@ -1,0 +1,27 @@
+<Alloy>
+	<Window class="win nav-hidden">
+
+		<!--  -->
+		<LeftNavButton class="button-back" onClick="goBack" platform="ios"/>
+		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="goBack" platform="android"/>
+
+		<!--  -->
+		<ScrollableView id="slider" class="slider">
+			<View>
+				<Label class="slider-title">1</Label>
+			</View>
+			<View>
+				<Label class="slider-title">2</Label>
+			</View>
+			<View>
+				<Label class="slider-title">3</Label>
+			</View>
+		</ScrollableView>
+
+		<Widget id="paging" src="com.imobicloud.paging" class="slider-paging"/>
+
+		<Button class="button button-facebook" onClick="loginFacebook">Facebook</Button>
+		<Button class="button button-phone" onClick="loginPhone">Phone</Button>
+
+	</Window>
+</Alloy>

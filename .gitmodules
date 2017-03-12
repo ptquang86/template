@@ -4,3 +4,6 @@
 [submodule "app/lib/iconfont"]
 	path = app/lib/iconfont
 	url = https://ptquang86@github.com/ptquang86/iconfont.git
+[submodule "app/widgets/com.imobicloud.paging"]
+	path = app/widgets/com.imobicloud.paging
+	url = https://imobicloud@github.com/imobicloud/com.imobicloud.paging.git

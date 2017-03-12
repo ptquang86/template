@@ -9,16 +9,12 @@ function init() {
     // load UI
     if (0) {
         Alloy.Globals.WinManager.load({
-            url: 'home',
-            data: {
-                url: 'home/page',
-                data: {}
-            },
+            url: 'window',
             reset: true
         });
     } else {
         Alloy.Globals.WinManager.load({
-            url: 'window',
+            url: 'landing',
             reset: true
         });
     }

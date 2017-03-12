@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ti:app 
+<ti:app
   xmlns:ti="http://ti.appcelerator.org">
   <id>ptquang86.template</id>
   <name>template</name>
@@ -39,10 +39,17 @@
         <false/>
         <key>UIStatusBarStyle</key>
         <string>UIStatusBarStyleDefault</string>
+        <key>UIAppFonts</key>
+        <array>
+            <string>/fonts/Roboto-Bold.ttf</string>
+            <string>/fonts/Roboto-Light.ttf</string>
+            <string>/fonts/Roboto-Medium.ttf</string>
+            <string>/fonts/Roboto-Regular.ttf</string>
+        </array>
       </dict>
     </plist>
   </ios>
-  <android 
+  <android
     xmlns:android="http://schemas.android.com/apk/res/android">
   </android>
   <mobileweb>

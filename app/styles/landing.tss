@@ -1,0 +1,14 @@
+".slider": { bottom: 48, backgroundColor: '#eea5b1' }
+    ".slider-title": { bottom: 72, color: '#fff', font: { fontSize: 20, fontFamily: 'Roboto-Medium' } }
+
+".slider-paging": { height: 5, bottom: 96, touchEnabled: false }
+    ".slider-paging-inner": { width: Ti.UI.SIZE, height: 5, touchEnabled: false }
+        ".slider-paging-dot": { width: 20, height: 5, left: 5,
+            backgroundColor: '#fff', borderRadius: 2.5, touchEnabled: false }
+        ".slider-paging-dot-on": { opacity: 1 }
+        ".slider-paging-dot-off": { opacity: 0.4 }
+
+".button": { width: '50%', height: 48, bottom: 0,
+    font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
+".button-facebook": { left: 0, color: '#fff', backgroundColor: '#a7cee5' }
+".button-phone": { right: 0, color: '#555', backgroundColor: '#fff' }
