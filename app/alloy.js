@@ -1,48 +1,45 @@
-// The contents of this file will be executed before any of
-// your view controllers are ever executed, including the index.
-// You have access to all functionality on the `Alloy` namespace.
-//
-// This is a great place to do any initialization for your app
-// or create any global variables/functions that you'd like to
-// make available throughout your app. You can easily make things
-// accessible globally by attaching them to the `Alloy.Globals`
-// object. For example:
-//
-// Alloy.Globals.someGlobalFunction = function(){};
+// /*
+(function() {
 
+	// var displayCaps = Ti.Platform.displayCaps,
+		// platformWidth = displayCaps.platformWidth,
+		// platformHeight = displayCaps.platformHeight;
+	// Ti.API.info('ScreenSize 1: ' + JSON.stringify( [platformWidth, platformHeight] ));
+	// if (OS_ANDROID) {
+		// var measurement = require('alloy/measurement');
+		// platformWidth = Math.floor(measurement.pxToDP(platformWidth));
+		// platformHeight = Math.floor(measurement.pxToDP(platformHeight));
+		// Ti.API.info('ScreenSize 2: ' + JSON.stringify( [platformWidth, platformHeight] ));
+		// if (platformWidth == displayCaps.platformWidth && platformHeight == displayCaps.platformHeight) {
+			// Ti.API.error('alloy.js: Delete the [build] + [Resources] folders then build again.');
+		// }
+	// }
 
-// added during app creation. this will automatically login to
-// ACS for your application and then fire an event (see below)
-// when connected or errored. if you do not use ACS in your
-// application as a client, you should remove this block
-(function(){
-var ACS = require('ti.cloud'),
-    env = Ti.App.deployType.toLowerCase() === 'production' ? 'production' : 'development',
-    username = Ti.App.Properties.getString('acs-username-'+env),
-    password = Ti.App.Properties.getString('acs-password-'+env);
+	// var IsScreen320 = false, //  640 × 960
+		// IsScreen375 = false, //  750 × 1334
+		// IsScreen414 = false; // 1242 × 2208
+	// if (platformWidth >= 414) {
+		// IsScreen414 = true;
+	// } else if (platformWidth >= 375) {
+		// IsScreen375 = true;
+	// } else if (platformWidth >= 320) {
+		// IsScreen320 = true;
+	// }
 
-// if not configured, just return
-if (!env || !username || !password) { return; }
-/**
- * Appcelerator Cloud (ACS) Admin User Login Logic
- *
- * fires login.success with the user as argument on success
- * fires login.failed with the result as argument on error
- */
-ACS.Users.login({
-	login:username,
-	password:password,
-}, function(result){
-	if (env==='development') {
-		Ti.API.info('ACS Login Results for environment `'+env+'`:');
-		Ti.API.info(result);
-	}
-	if (result && result.success && result.users && result.users.length){
-		Ti.App.fireEvent('login.success',result.users[0],env);
-	} else {
-		Ti.App.fireEvent('login.failed',result,env);
-	}
-});
+	// var originalWidth = 414;
+	// var scaleFactor = (platformWidth / originalWidth).toFixed(1);
+	// var ScreenScale = Ti.UI.create2DMatrix().scale(scaleFactor, scaleFactor);
+
+  	Alloy.Globals.UI = {
+  		// IsScreen320: IsScreen320,
+  		// IsScreen375: IsScreen375,
+  		// IsScreen414: IsScreen414,
+  		// ScreenScale: ScreenScale,
+  		// platformWidth: platformWidth,
+  		// platformHeight: platformHeight
+  	};
+
+  	Ti.API.info('=== Alloy.Globals.UI ' + JSON.stringify( Alloy.Globals.UI ));
 
 })();
-
+// */
