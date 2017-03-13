@@ -10,5 +10,5 @@
 
 ".button": { width: '50%', height: 48, bottom: 0,
     font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
-".button-facebook": { left: 0, color: '#fff', backgroundColor: '#a7cee5' }
-".button-phone": { right: 0, color: '#555', backgroundColor: '#fff' }
+".button-facebook": { left: 0, color: '#fff', backgroundColor: '#7dc2ec' }
+".button-phone": { right: 0, color: '#75819c', backgroundColor: '#fff' }

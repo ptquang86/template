@@ -28,9 +28,15 @@ function unloadPaging() {
 // ==
 
 function loginFacebook() {
-    alert('TODO: loginFacebook');
+    Alloy.Globals.WinManager.load({
+        url: 'users/signin',
+        reset: false
+    });
 }
 
 function loginPhone() {
-    alert('TODO: loginPhone');
+    Alloy.Globals.WinManager.load({
+        url: 'users/signup',
+        reset: false
+    });
 }

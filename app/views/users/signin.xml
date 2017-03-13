@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="win nav-visible nav-button nav-title" title="Sign In">
+
+		<!--  -->
+		<LeftNavButton class="button-back" onClick="goBack" platform="ios"/>
+		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="goBack" platform="android"/>
+
+		<!--  -->
+		<ScrollView class="scroller"></ScrollView>
+
+		<Button class="button button-login" onClick="doLogin">Login</Button>
+
+	</Window>
+</Alloy>
