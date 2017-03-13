@@ -17,6 +17,7 @@
     "Button[platform=android]": { backgroundColor: 'transparent' }
 	"MenuItem[platform=android]": { showAsAction: Titanium.Android.SHOW_AS_ACTION_ALWAYS }
 	"TextField[platform=android]": { hintTextColor: '#aeaeae' }
+    "TextArea[platform=android]": { hintTextColor: '#aeaeae' }
     // */
 
     ".button-back[platform=ios]": { image: '/images/back.png' }
