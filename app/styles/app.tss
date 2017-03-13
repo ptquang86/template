@@ -4,7 +4,7 @@
 
 // /*
 ".nav-hidden[platform=ios]": { navBarHidden: true }
-".nav-hidden[platform=android]": { theme: 'Theme.AppCompat.NoTitleBar' }
+".nav-hidden[platform=android]": { theme: 'NoActionBar' }
 ".nav-visible[platform=ios]": { barColor: '#3a4450', translucent: false }
 ".nav-visible[platform=android]": { theme: 'MaterialTheme' }
 ".nav-button[platform=ios]": { backButtonTitle: '', color: '#fff', navTintColor: '#fff', font: { fontSize: 14, fontFamily: 'Roboto-Regular' } }

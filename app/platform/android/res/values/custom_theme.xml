@@ -3,18 +3,12 @@
 
     <!-- https://developer.android.com/samples/ActionBarCompat-Styled/res/values/styles.html -->
 
-	<!-- theme: material default -->
-    <style name="MaterialTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-    	<item name="android:textAllCaps">false</item>
+    <!-- theme: base theme -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textAllCaps">false</item>
         <item name="android:textColorHint">@color/hintTextColor</item>
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:navigationBarColor">@color/navigationBarColor</item>
-
-        <!-- style: action-bar -->
-        <item name="actionBarTheme">@style/ActionBarThemeDark</item>
-		<item name="actionBarStyle">@style/ActionBarStyleDark</item>
-        <item name="actionMenuTextColor">@color/textColorPrimary</item>
-		<item name="windowActionBarOverlay">false</item>
 
         <!-- style: date time picker -->
         <item name="android:datePickerDialogTheme">@style/DatePickerDialogTheme</item>
@@ -23,24 +17,28 @@
         <item name="searchViewStyle">@style/SearchViewStyle</item>
     </style>
 
-    <!-- theme: transparent action-bar dark -->
-	<style name="TransparentActionBar" parent="@style/Theme.AppCompat">
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textColorHint">@color/hintTextColor</item>
-        <item name="android:textColorPrimary">@color/textColorPrimary</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    <!-- theme: no action-bar -->
+    <style name="NoActionBar" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
+	<!-- theme: material design -->
+    <style name="MaterialTheme" parent="AppBaseTheme">
+        <!-- style: action-bar -->
+        <item name="actionBarTheme">@style/ActionBarThemeDark</item>
+		<item name="actionBarStyle">@style/ActionBarStyleDark</item>
+        <item name="actionMenuTextColor">@color/textColorPrimary</item>
+		<item name="windowActionBarOverlay">false</item>
+    </style>
+
+    <!-- theme: transparent action-bar dark -->
+	<style name="TransparentActionBar" parent="AppBaseTheme">
         <!-- style: action-bar -->
 		<item name="actionBarTheme">@style/ActionBarThemeDark</item>
 		<item name="actionBarStyle">@style/TransparentActionBarStyleDark</item>
         <item name="actionMenuTextColor">@color/textColorPrimary</item>
 		<item name="windowActionBarOverlay">true</item>
-
-        <!-- style: date time picker -->
-        <item name="android:datePickerDialogTheme">@style/DatePickerDialogTheme</item>
-        <item name="android:timePickerDialogTheme">@style/TimePickerDialogTheme</item>
-        <!-- style: search view -->
-        <item name="searchViewStyle">@style/SearchViewStyle</item>
 	</style>
 
     <!--
@@ -51,8 +49,7 @@
         do not change!
     -->
     <!-- button menu for action-bar dark -->
-    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="@style/Theme.AppCompat.NoActionBar">
-        <item name="android:textAllCaps">false</item>
+    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="AppBaseTheme">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     </style>
