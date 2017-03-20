@@ -5,7 +5,8 @@ build
 /i18n
 /platform
 /modules/android
-/modules/ios
+/modules/commonjs
+/modules/iphone
 npm-debug.log
 tmp
 .map
