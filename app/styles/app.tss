@@ -14,14 +14,23 @@
 // */
 
     // /*
+    // == ANDROID
     "Button[platform=android]": { backgroundColor: 'transparent' }
 	"MenuItem[platform=android]": { showAsAction: Titanium.Android.SHOW_AS_ACTION_ALWAYS }
 	"TextField[platform=android]": { hintTextColor: '#aeaeae' }
     "TextArea[platform=android]": { hintTextColor: '#aeaeae' }
     // */
 
+    /*
     ".button-back[platform=ios]": { image: '/images/back.png' }
-
+    // */
+    
+    /*
+	".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }
+    // */
+    
+    /*
+    // == TYPEFACE
     ".f-display-4": { color: '#8A000000', font: { fontSize: 112, fontFamily: 'Roboto-Light' } }
     ".f-display-3": { color: '#8A000000', font: { fontSize: 56, fontFamily: 'Roboto-Regular' } }
     ".f-display-2": { color: '#8A000000', font: { fontSize: 45, fontFamily: 'Roboto-Regular' } }
@@ -33,10 +42,10 @@
     ".f-body-1": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Regular' } }
     ".f-caption": { color: '#8A000000', font: { fontSize: 12, fontFamily: 'Roboto-Regular' } }
     ".f-button": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
-
+    // */
+    
     /*
-	".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }
-
+    // == LISTVIEW
     ".lv": { backgroundColor: 'transparent' }
 	".lv[platform=ios]": { keyboardDismissMode: Titanium.UI.iOS.KEYBOARD_DISMISS_MODE_ON_DRAG }
 	".lv-separator": { separatorColor: '#d6d6d6' }
@@ -50,7 +59,10 @@
         ".li-selectable[platform=ios]": { selectedBackgroundColor: '#d6d6d6', selectedColor: '#000' }
         ".li-notselectable[platform=ios]": { selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE }
 			".title": { left: 16, right: 16, color: '#000', font: { fontSize: 16, fontFamily: 'Roboto-Regular' } }
-
+    // */
+    
+    /*
+    // == TEXTFIELD
 	".txt-wrapper": {  }
 	".txt-wrapper[platform=ios]": { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
 		".txt": { color: '#000', font: { fontSize: 14, fontFamily: 'Roboto-Regular' }, backgroundColor: 'transparent', padding: { left: 0, right: 0 } }
@@ -68,5 +80,5 @@
 		".txt-textfield-done": { returnKeyType: Titanium.UI.RETURNKEY_DONE }
 		".txt-textfield-search": { returnKeyType: Titanium.UI.RETURNKEY_SEARCH }
 		".txt-textfield-send": { returnKeyType: Titanium.UI.RETURNKEY_SEND }
-			".txt-hinttext": { attributes: [{ range: [0, 14], value: '#333', type: Ti.UI.ATTRIBUTE_FOREGROUND_COLOR }] }
+			".txt-hinttext[platform=ios]": { attributes: [{ range: [0, 14], value: '#333', type: Ti.UI.ATTRIBUTE_FOREGROUND_COLOR }] }
     // */
