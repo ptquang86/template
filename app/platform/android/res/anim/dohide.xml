@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- https://github.com/applification/TiStarter/tree/master/app/platform/android/res/anim -->
+
+<!--
+$.win.open({ 
+    activityEnterAnimation: Ti.Android.R.anim.doshow,
+    activityExitAnimation: Ti.Android.R.anim.dofreeze
+});
+$.win.close({ 
+    activityEnterAnimation: Ti.Android.R.anim.dofreeze,
+    activityExitAnimation: Ti.Android.R.anim.dohide
+});
+-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:shareInterpolator="false">
+     <!-- <scale 
+         android:fromXScale="80%p"
+         android:toXScale="100%p"
+         android:fromYScale="80%p"
+         android:toYScale="100%p"
+         android:pivotX="50%p"
+         android:pivotY="50%p"
+         android:duration="@android:integer/config_mediumAnimTime"/> -->
+     <!-- <translate 
+         android:fromXDelta="0" 
+         android:toXDelta="0"
+         android:fromYDelta="0"
+         android:toYDelta="0"
+         android:duration="@android:integer/config_mediumAnimTime"/> -->
+     <alpha 
+         android:fromAlpha="1.0" 
+         android:toAlpha="0.0"
+         android:duration="@android:integer/config_mediumAnimTime"/>
+</set>

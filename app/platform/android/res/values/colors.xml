@@ -9,10 +9,15 @@
 		do not change this name!
 		-->
 	<color name="primary">#fff</color>
+	<color name="colorControlActivated">#79b6e1</color>
+	<color name="colorControlHighlight">#79b6e1</color>
+	<color name="colorEdgeEffect">#79b6e1</color>
+	<color name="colorHintText">#75819c</color>
 	<color name="colorPrimaryDark">#79b6e1</color>
-	<color name="hintTextColor">#75819c</color>
-	<color name="textColorPrimary">#3f4a74</color>
+	<color name="colorSwitchThumbNormal">#79b6e1</color>
 	<color name="navigationBarColor">#79b6e1</color>
+	<color name="statusBarColor">#79b6e1</color>
+	<color name="textColorPrimary">#3f4a74</color>
 
 	<!-- action-bar
 		- actionBarButtonColor does not work, please use colored icon for this.
