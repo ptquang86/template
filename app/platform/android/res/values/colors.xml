@@ -16,7 +16,7 @@
 	<color name="colorPrimaryDark">#79b6e1</color>
 	<color name="colorSwitchThumbNormal">#79b6e1</color>
 	<color name="navigationBarColor">#79b6e1</color>
-	<color name="statusBarColor">#79b6e1</color>
+	<color name="statusBarColor">#609DC8</color>
 	<color name="textColorPrimary">#3f4a74</color>
 
 	<!-- action-bar
@@ -32,10 +32,13 @@
 	<color name="actionBarSubtitleColor">#ffffff</color>
 	<!-- <string name="actionBarSubtitleFont">Roboto-Bold</string> -->
 	<dimen name="actionBarSubtitleFontSize">14dp</dimen>
-	<string name="actionBarBackgroundGradientAngle">0</string>
+
+	<!-- MaterialTheme -->
 	<color name="actionBarBackgroundColor">#79b6e1</color>
+
+	<!-- GradientTheme -->
+	<string name="actionBarBackgroundGradientAngle">0</string>
 	<color name="actionBarBackgroundGradientStartColor">#082e3d</color>
     <color name="actionBarBackgroundGradientEndColor">#00425c</color>
-
 
 </resources>

@@ -29,23 +29,29 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-	<!-- theme: material design -->
+    <!-- theme: transparent action-bar dark -->
+	<style name="TransparentActionBar" parent="AppBaseTheme">
+		<item name="actionBarTheme">@style/ActionBarThemeDark</item>
+		<item name="actionBarStyle">@style/ActionBarStyleTransparentDark</item>
+        <item name="actionMenuTextColor">@color/textColorPrimary</item>
+		<item name="windowActionBarOverlay">true</item>
+	</style>
+
+	<!-- theme: material dark -->
     <style name="MaterialTheme" parent="AppBaseTheme">
-        <!-- style: action-bar -->
         <item name="actionBarTheme">@style/ActionBarThemeDark</item>
 		<item name="actionBarStyle">@style/ActionBarStyleDark</item>
         <item name="actionMenuTextColor">@color/textColorPrimary</item>
 		<item name="windowActionBarOverlay">false</item>
     </style>
 
-    <!-- theme: transparent action-bar dark -->
-	<style name="TransparentActionBar" parent="AppBaseTheme">
-        <!-- style: action-bar -->
-		<item name="actionBarTheme">@style/ActionBarThemeDark</item>
-		<item name="actionBarStyle">@style/TransparentActionBarStyleDark</item>
+    <!-- theme: gradient dark -->
+    <style name="GradientTheme" parent="AppBaseTheme">
+        <item name="actionBarTheme">@style/ActionBarThemeDark</item>
+		<item name="actionBarStyle">@style/ActionBarStyleGradientDark</item>
         <item name="actionMenuTextColor">@color/textColorPrimary</item>
-		<item name="windowActionBarOverlay">true</item>
-	</style>
+		<item name="windowActionBarOverlay">false</item>
+    </style>
 
     <!--
         theme: material theme for Ti.DrawerLayout
@@ -65,16 +71,16 @@
 	    <item name="colorControlNormal">@color/actionBarBackButtonColor</item>
         <!-- <item name="colorButtonNormal">@color/actionBarButtonColor</item> -->
 	</style>
-	<style name="ActionBarStyleDark" parent="@style/Widget.AppCompat.Light.ActionBar">
+    <style name="ActionBarStyleTransparentDark" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="elevation">0dp</item>
-        <item name="background">@drawable/custom_gradient</item>
 	    <item name="titleTextStyle">@style/TitleTextStyleDark</item>
 	    <item name="subtitleTextStyle">@style/SubtitleTextStyleDark</item>
 	</style>
-    <style name="TransparentActionBarStyleDark" parent="@style/Widget.AppCompat.Light.ActionBar">
-        <item name="elevation">0dp</item>
-	    <item name="titleTextStyle">@style/TitleTextStyleDark</item>
-	    <item name="subtitleTextStyle">@style/SubtitleTextStyleDark</item>
+	<style name="ActionBarStyleDark" parent="ActionBarStyleTransparentDark">
+        <item name="background">@color/actionBarBackgroundColor</item>
+	</style>
+    <style name="ActionBarStyleGradientDark" parent="ActionBarStyleTransparentDark">
+        <item name="background">@drawable/custom_gradient</item>
 	</style>
 	<style name="TitleTextStyleDark" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <!-- <item name="android:fontFamily">@string/actionBarTitleFont</item> -->
