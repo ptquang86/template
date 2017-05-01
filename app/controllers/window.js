@@ -19,7 +19,7 @@ function showProfile() {
 // ==
 
 function getData() {
-    $.listview.toggleAI();
+    $.listview.toggleAI(true);
     setTimeout(loadData, 3000);
 }
 
