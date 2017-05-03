@@ -1,0 +1,2 @@
+".container": {}
+    ".ai": { top: 20, style: Titanium.UI.ActivityIndicatorStyle.DARK }
