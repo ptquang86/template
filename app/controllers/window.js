@@ -12,8 +12,8 @@ function goBack() {
     Alloy.Globals.WinManager.loadPrevious();
 }
 
-function showProfile() {
-    alert('TODO: showProfile');
+function addProfile() {
+    alert('TODO: addProfile');
 }
 
 // ==

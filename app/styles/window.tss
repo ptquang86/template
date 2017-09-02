@@ -1,5 +1,5 @@
-".button-profile[platform=ios]": { image: '/images/TODO.png' }
-".button-profile[platform=android]": { icon: '/images/TODO.png' }
+".button-add[platform=ios]": { image: '/images/add.png' }
+".button-add[platform=android]": { icon: '/images/add.png' }
 
 /*".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }*/
 ".listview": {  }

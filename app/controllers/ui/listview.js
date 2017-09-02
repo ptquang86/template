@@ -44,3 +44,8 @@ function doTransform(model) {
 	// o.template = 'template';
 	return o;
 }
+
+function lvClick(e) {
+	var item = $.collection.get(e.itemId);
+	item && $.trigger('click', item.toJSON());
+}

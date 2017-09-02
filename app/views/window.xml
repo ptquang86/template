@@ -3,10 +3,10 @@
 
 		<!--  -->
 		<LeftNavButton class="button-back" onClick="goBack" platform="ios"/>
-		<RightNavButton class="button-profile" onClick="showProfile" platform="ios"/>
+		<RightNavButton class="button-add" onClick="addProfile" platform="ios"/>
 		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="goBack" platform="android"/>
 		<Menu platform="android">
-			<MenuItem class="button-profile" onClick="showProfile"/>
+			<MenuItem class="button-add" onClick="addProfile"/>
 		</Menu>
 
 		<!--  -->
