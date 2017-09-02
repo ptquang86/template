@@ -2,12 +2,12 @@ init();
 
 function init() {
     var oWindowManager = require('managers/window'),
-        winManager = new oWindowManager();
+        winManager = new oWindowManager({ DEBUG: true });
     OS_ANDROID && winManager.on('window:exit', exitConfirm);
     Alloy.Globals.WinManager = winManager;
 
     // load UI
-    if (0) {
+    if (1) {
         Alloy.Globals.WinManager.load({
             url: 'window',
             reset: true

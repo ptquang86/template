@@ -3,6 +3,7 @@ Resources
 build.log
 build
 /i18n
+/node_modules
 /platform
 /modules/android
 /modules/commonjs
