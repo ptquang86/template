@@ -1,7 +1,6 @@
 <Alloy>
-	<View id="container" class="txt-wrapper">
+	<View id="container" class="container">
+		<TextField id="txt" class="f-body-1 txt txt-textfield"/>
 		<View class="txt-border"/>
-		<TextField id="txt" class="txt txt-textfield"
-			onReturn="txtReturn"/>
 	</View>
 </Alloy>

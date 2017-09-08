@@ -29,20 +29,18 @@
 	".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }
     // */
     
-    /*
     // == TYPEFACE
-    ".f-display-4": { color: '#8A000000', font: { fontSize: 112, fontFamily: 'Roboto-Light' } }
-    ".f-display-3": { color: '#8A000000', font: { fontSize: 56, fontFamily: 'Roboto-Regular' } }
-    ".f-display-2": { color: '#8A000000', font: { fontSize: 45, fontFamily: 'Roboto-Regular' } }
-    ".f-display-1": { color: '#8A000000', font: { fontSize: 34, fontFamily: 'Roboto-Regular' } }
-    ".f-headline": { color: '#DE000000', font: { fontSize: 24, fontFamily: 'Roboto-Regular' } }
-    ".f-title": { color: '#DE000000', font: { fontSize: 20, fontFamily: 'Roboto-Medium' } }
-    ".f-subheading": { color: '#DE000000', font: { fontSize: 16, fontFamily: 'Roboto-Regular' } }
-    ".f-body-2": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
-    ".f-body-1": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Regular' } }
-    ".f-caption": { color: '#8A000000', font: { fontSize: 12, fontFamily: 'Roboto-Regular' } }
-    ".f-button": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
-    // */
+    // ".f-display-4": { color: '#8A000000', font: { fontSize: 112, fontFamily: 'Roboto-Light' } }
+    // ".f-display-3": { color: '#8A000000', font: { fontSize: 56, fontFamily: 'Roboto-Regular' } }
+    // ".f-display-2": { color: '#8A000000', font: { fontSize: 45, fontFamily: 'Roboto-Regular' } }
+    // ".f-display-1": { color: '#8A000000', font: { fontSize: 34, fontFamily: 'Roboto-Regular' } }
+    // ".f-headline": { color: '#DE000000', font: { fontSize: 24, fontFamily: 'Roboto-Regular' } }
+    // ".f-title": { color: '#DE000000', font: { fontSize: 20, fontFamily: 'Roboto-Medium' } }
+    // ".f-subheading": { color: '#DE000000', font: { fontSize: 16, fontFamily: 'Roboto-Regular' } }
+    // ".f-body-2": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
+    // ".f-body-1": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Regular' } }
+    // ".f-caption": { color: '#8A000000', font: { fontSize: 12, fontFamily: 'Roboto-Regular' } }
+    // ".f-button": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
     
     /*
     // == LISTVIEW
@@ -65,7 +63,7 @@
     // == TEXTFIELD
 	".txt-wrapper": {  }
 	".txt-wrapper[platform=ios]": { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
-		".txt": { color: '#000', font: { fontSize: 14, fontFamily: 'Roboto-Regular' }, backgroundColor: 'transparent', padding: { left: 0, right: 0 } }
+		".txt": { backgroundColor: 'transparent', padding: { left: 0, right: 0 } }
 		".txt[platform=android]": { softKeyboardOnFocus: Titanium.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS }
 		".txt-textfield": { height: 52, left: 10, right: 10, hintTextColor: '#777' }
 		".txt-textfield[platform=ios]": { clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS }
@@ -79,5 +77,4 @@
 		".txt-textfield-done": { returnKeyType: Titanium.UI.RETURNKEY_DONE }
 		".txt-textfield-search": { returnKeyType: Titanium.UI.RETURNKEY_SEARCH }
 		".txt-textfield-send": { returnKeyType: Titanium.UI.RETURNKEY_SEND }
-			".txt-hinttext[platform=ios]": { attributes: [{ range: [0, 14], value: '#333', type: Ti.UI.ATTRIBUTE_FOREGROUND_COLOR }] }
     // */

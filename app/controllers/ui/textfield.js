@@ -1,55 +1,75 @@
+/*
+<Require id="txtEmail" class="txt" src="/ui/textfield" 
+	TextFieldEvents="change,return" onChange="txtEmailChange" onReturn="txtEmailReturn"/>
+
+"#txtEmail": { TextField: { 
+	hintText: L('add_email'),
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_EMAIL, 
+	returnKeyType: Titanium.UI.RETURNKEY_NEXT,
+} }
+	
+args = {
+	id: 'txtEmail',
+	TextField: { 
+		hintText: L('add_email'),
+		keyboardType: Titanium.UI.KEYBOARD_TYPE_EMAIL, 
+		returnKeyType: Titanium.UI.RETURNKEY_NEXT,
+		value: 'abc'
+	},
+	TextFieldEvents: 'change,return'
+}
+*/
 var args = $.args;
 
 init();
 function init() {
-    var exclude = ['id', 'children', 'hintText'];
-    var textfields = [
-        'autocapitalization', 'autocorrect', 'clearButtonMode',
-        'hintTextColor', 'keyboardType', 'passwordMask',
-        'returnKeyType', 'softKeyboardOnFocus'
-    ];
-
-    for (var key in args) {
-        if (args.hasOwnProperty(key)) {
-            if (textfields.indexOf(key) != -1) {
-                $.txt[key] = args[key];
-            } else if (exclude.indexOf(key) == -1) {
-                $.container[key] = args[key];
-            }
-        }
-    }
-
-    var hintText = args.hintText;
-    if (hintText) {
-        if (OS_IOS) {
-            $.txt.attributedHintText = Ti.UI.createAttributedString({
-                text: hintText,
-                attributes: [
-                    {
-                        type: Ti.UI.ATTRIBUTE_FOREGROUND_COLOR,
-                        value: args.hintTextColor || '#555',
-                        range: [0, hintText.length]
-                    }
-                ]
-            });
-        } else {
-            $.txt.hintText = hintText;
-        }
-    }
+	var exclude = ['id', 'children', 'TextField', 'TextFieldEvents'];
+	$.container.applyProperties(_.omit(args, exclude));
+	
+	args.TextField && $.txt.applyProperties(args.TextField);
+	
+	// events
+	var TextFieldEvents = args.TextFieldEvents;
+	if (TextFieldEvents) {
+		var events = TextFieldEvents.split(',');
+		var eventMapping = { 'change': txtChange, 'return': txtReturn };
+		for (var i = 0, ii = events.length; i < ii; i++) {
+			var e = events[i],
+				fnc = eventMapping[e];
+			fnc && $.txt.addEventListener(e, eventMapping[e]);
+		}
+	}
 }
 
-exports.setValue = function(value) {
-    $.txt.value = value;
-};
+function getValue(value) {
+	return $.txt.value;
+}
 
-exports.getValue = function(value) {
-    return $.txt.value;
+function setValue(value) {
+	$.txt.value = value;
+}
+
+Object.defineProperty($, 'value', {
+    get: function() {
+        return getValue();
+    },
+    set: function(value) {
+        return setValue(value);
+    }
+});
+
+function txtChange(e) {
+	$.trigger('change', { id: args.id, value: getValue() });
+}
+
+function txtReturn(e) {
+	$.trigger('return', { id: args.id, value: getValue() });
+}
+
+exports.blur = function() {
+	$.txt.blur();
 };
 
 exports.focus = function() {
-    $.txt.focus();
+	$.txt.focus();
 };
-
-function txtReturn(e) {
-    return $.trigger('return', { id: args.id, value: this.value });
-}

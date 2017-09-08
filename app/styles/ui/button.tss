@@ -1,0 +1,3 @@
+".container": { height: 48, left: 16, right: 16, backgroundColor: '#79b6e1', borderRadius: 4 }
+    ".button": { width: '100%', height: '100%', backgroundColor: 'transparent', color: '#fff' }
+    ".ai": { style: Titanium.UI.ActivityIndicatorStyle.PLAIN }

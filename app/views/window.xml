@@ -1,5 +1,5 @@
 <Alloy>
-	<Window class="win nav-visible nav-button nav-title" title="TODO">
+	<Window class="win nav-visible nav-button nav-title" titleid="todo_title">
 
 		<!--  -->
 		<LeftNavButton class="button-back" onClick="goBack" platform="ios"/>
