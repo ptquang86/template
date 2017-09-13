@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- <string name="NSContactsUsageDescription">Can we use to your contacts?</string> -->
+    <!-- <string name="NSCameraUsageDescription">Can we use your camera?</string> -->
+    <!-- <string name="NSCalendarsUsageDescription">Can we use your calendar?</string> -->
+    <!-- <string name="NSPhotoLibraryUsageDescription">Can we save to your library?</string> -->
+    <!-- <string name="NSMicrophoneUsageDescription">Can we use your microphone?</string> -->
+    <!-- <string name="NSAppleMusicUsageDescription">Can we use your music library?</string> -->
+</resources>

@@ -39,6 +39,10 @@
         <false/>
         <key>UIStatusBarStyle</key>
         <string>UIStatusBarStyleDefault</string>
+        <key>CFBundleLocalizations</key>
+        <array>
+            <string>en</string>
+        </array>
         <key>UIAppFonts</key>
         <array>
             <string>/fonts/Roboto-Bold.ttf</string>
