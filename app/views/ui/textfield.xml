@@ -1,6 +1,6 @@
 <Alloy>
 	<View id="container" class="container">
 		<TextField id="txt" class="f-body-1 txt txt-textfield"/>
-		<View class="txt-border"/>
+		<View id="border" class="border"/>
 	</View>
 </Alloy>

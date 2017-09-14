@@ -2,14 +2,27 @@
 <Require id="txtEmail" class="txt" src="/ui/textfield" 
 	TextFieldEvents="change,return" onChange="txtEmailChange" onReturn="txtEmailReturn"/>
 
-"#txtEmail": { TextField: { 
-	hintText: L('add_email'),
-	keyboardType: Titanium.UI.KEYBOARD_TYPE_EMAIL, 
-	returnKeyType: Titanium.UI.RETURNKEY_NEXT,
-} }
+"#txtEmail": { 
+	height: 42,
+	Border: {
+		height: 1,
+		bottom: 0,
+		backgroundColor: '#646464'
+	},
+	TextField: { 
+		hintText: L('add_email'),
+		keyboardType: Titanium.UI.KEYBOARD_TYPE_EMAIL, 
+		returnKeyType: Titanium.UI.RETURNKEY_NEXT,
+	} 
+}
 	
 args = {
 	id: 'txtEmail',
+	Border: {
+		height: 1,
+		bottom: 0,
+		backgroundColor: '#646464'
+	},
 	TextField: { 
 		hintText: L('add_email'),
 		keyboardType: Titanium.UI.KEYBOARD_TYPE_EMAIL, 
@@ -23,9 +36,10 @@ var args = $.args;
 
 init();
 function init() {
-	var exclude = ['id', 'children', 'TextField', 'TextFieldEvents'];
+	var exclude = ['id', 'children', 'Border', 'TextField', 'TextFieldEvents'];
 	$.container.applyProperties(_.omit(args, exclude));
 	
+	args.Border && $.border.applyProperties(args.Border);
 	args.TextField && $.txt.applyProperties(args.TextField);
 	
 	// events
