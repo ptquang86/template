@@ -53,8 +53,12 @@
       </dict>
     </plist>
   </ios>
-  <android
-    xmlns:android="http://schemas.android.com/apk/res/android">
+  <android xmlns:android="http://schemas.android.com/apk/res/android">
+      <manifest android:versionCode="001" android:versionName="0.0.1">
+          <application android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round">
+              
+          </application>
+      </manifest>
   </android>
   <mobileweb>
     <precache></precache>
