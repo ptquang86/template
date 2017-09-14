@@ -1,6 +1,8 @@
 <Alloy>
 	<Collection id="collection" src="info" instance="true"/>
 	<ListView id="lv" class="lv lv-separator" defaultItemTemplate="template" onItemclick="lvClick">
+		<!-- <RefreshControl id="ptr" onRefreshstart="doRefresh"/> -->
+		
         <Templates>
             <ItemTemplate name="template" class="li li-notselectable">
                 <ImageView bindId="icon" class="icon"/>

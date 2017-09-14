@@ -4,6 +4,7 @@
 ".lv-separator[platform=ios]": { listSeparatorInsets: { left: 0, right: 0 } }
 /*".lv-noseparator[platform=ios]": { separatorStyle: Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE }*/
 /*".lv-noseparator[platform=android]": { separatorHeight: 0 }*/
+    /*"#ptr": { tintColor: '#000' }*/
     ".hv": { height: 8 }
     ".ai": { top: 20, style: Titanium.UI.ActivityIndicatorStyle.DARK }
     ".li": { height: 72, backgroundColor: 'transparent' }

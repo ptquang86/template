@@ -28,6 +28,21 @@ function toggleAI(visible) {
 }
 exports.toggleAI = toggleAI;
 
+/*
+function toggleRefreshControl(visible) {
+    if (visible) {
+        $.ptr.beginRefreshing();
+    } else {
+        $.ptr.endRefreshing();
+    }
+}
+exports.toggleRefreshControl = toggleRefreshControl;
+
+function doRefresh(e) {
+	$.trigger('refresh');
+}
+*/
+
 function doFilter(collection) {
 	if (0) {
 		// return collection.where({ is_selected: 1 });
