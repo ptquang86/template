@@ -1,0 +1,9 @@
+".container": { height: 78, left: 16, right: 16 }
+".container[platform=ios]": { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
+    ".hint": { top: 15, left: 0, color: '#777', touchEnabled: false, visible: true }
+    ".txt": { top: 16, bottom: 8, backgroundColor: 'transparent', padding: { left: 0, right: 0 } }
+    ".txt[platform=android]": { softKeyboardOnFocus: Titanium.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS }
+    ".txt-textarea": { left: -5, right: -5, suppressReturn: false }
+    ".txt-textarea[platform=ios]": { keyboardToolbarColor: "#eaeaea", keyboardToolbarHeight: 40 }
+    ".txt-textarea[platform=android]": { hintTextColor: '#777' }
+    ".border": { height: 1, bottom: 0, backgroundColor: '#777' }
