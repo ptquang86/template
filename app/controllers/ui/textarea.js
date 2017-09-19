@@ -62,7 +62,7 @@ function init() {
 	var TextAreaEvents = args.TextAreaEvents;
 	if (TextAreaEvents) {
 		events = TextAreaEvents.split(',');
-		var eventMapping = { 'return': txtReturn };
+		var eventMapping = {  };
 		for (var i = 0, ii = events.length; i < ii; i++) {
 			var e = events[i],
 				fnc = eventMapping[e];
