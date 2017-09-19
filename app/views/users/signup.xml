@@ -1,14 +1,29 @@
 <Alloy>
-	<Window class="win nav-visible nav-button nav-title" title="Sign Up">
+	<Window class="win nav-visible nav-button nav-title" titleid="signup_title">
 
 		<!--  -->
 		<LeftNavButton class="button-back" onClick="goBack" platform="ios"/>
 		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="goBack" platform="android"/>
 
 		<!--  -->
-		<ScrollView class="scroller"></ScrollView>
-
-		<Button class="button button-register" onClick="createAccount">Create Account</Button>
+		<ScrollView class="scroller">
+		
+			<Require id="txtName" class="txt" src="/ui/textfield" 
+				TextFieldEvents="return" onReturn="txtReturn"/>
+			
+			<Require id="txtEmail" class="txt" src="/ui/textfield"
+				TextFieldEvents="return" onReturn="txtReturn"/>	
+			
+			<Require id="txtPhone" class="txt" src="/ui/textfield" 
+				TextFieldEvents="return" onReturn="txtReturn"/>
+			
+			<Require id="txtPassword" class="txt" src="/ui/textfield"
+				TextFieldEvents="return" onReturn="createAccount"/>	
+			
+			<Require id="button" class="button" titleid="signup_done" 
+				src="/ui/button" onClick="createAccount"/>	
+		
+		</ScrollView>
 
 	</Window>
 </Alloy>

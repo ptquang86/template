@@ -1,5 +1,34 @@
-".scroller": { bottom: 48, contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }
-
-".button": { width: '100%', height: 48, bottom: 0,
-    font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }
-".button-register": { color: '#fff', backgroundColor: '#7dc2ec' }
+".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }
+    ".txt": { top: 5 }
+    "#txtName": { 
+        top: 32,
+        TextField: { 
+            hintText: L('signup_name'),
+            returnKeyType: Titanium.UI.RETURNKEY_NEXT 
+        } 
+    }
+    "#txtEmail": { 
+        TextField: { 
+            hintText: L('signup_email'),
+            autocapitalization: false, 
+            autocorrect: false,
+            keyboardType: Titanium.UI.KEYBOARD_TYPE_EMAIL, 
+            returnKeyType: Titanium.UI.RETURNKEY_NEXT 
+        } 
+    }
+    "#txtPhone": { 
+        TextField: { 
+            hintText: L('signup_phone'),
+            keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBERS_PUNCTUATION, 
+            returnKeyType: Titanium.UI.RETURNKEY_NEXT 
+        } 
+    }
+    "#txtPassword": { 
+        TextField: { 
+            /*passwordMask: true,*/
+            hintText: L('signup_password'),
+            returnKeyType: Titanium.UI.RETURNKEY_NEXT 
+        } 
+    }
+    
+    ".button": { top: 10, bottom: 32 }

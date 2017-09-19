@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
+    <!-- SIGNUP -->
+    <string name="signup_title">Sign Up</string>
+    <string name="signup_name">Name</string>
+    <string name="signup_phone">Phone (ex: +841888000068)</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_done">CREATE ACCOUNT</string>
+    
+    <!--  -->
     <string name="todo_title">TODO: title</string>
     
 </resources>
