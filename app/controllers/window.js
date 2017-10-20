@@ -19,7 +19,7 @@ function addProfile() {
 // ==
 
 function getData() {
-    $.listview.toggleAI(true);
+    $.lv.toggleAI(true);
     setTimeout(loadData, 3000);
 }
 
@@ -33,9 +33,13 @@ function loadData() {
             subtitle: 'subtitle'
         });
     }
-    $.listview.load(data);
+    $.lv.load(data);
 }
 
 function unloadData() {
-    $.listview.unload();
+    $.lv.unload();
+}
+
+function lvClick(e) {
+    Ti.API.error("TODO: lvClick " + JSON.stringify( e ));
 }

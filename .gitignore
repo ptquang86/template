@@ -2,9 +2,9 @@
 Resources
 build.log
 build
-/i18n
+/i18n/
 /node_modules
-/platform
+/platform/
 /modules/android
 /modules/commonjs
 /modules/iphone

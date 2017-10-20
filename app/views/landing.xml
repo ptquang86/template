@@ -2,10 +2,6 @@
 	<Window class="win nav-hidden">
 
 		<!--  -->
-		<LeftNavButton class="button-back" onClick="goBack" platform="ios"/>
-		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="goBack" platform="android"/>
-
-		<!--  -->
 		<ScrollableView id="slider" class="slider">
 			<View>
 				<Label class="f-subheading slider-title">1</Label>

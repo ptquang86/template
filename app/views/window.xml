@@ -11,7 +11,7 @@
 
 		<!--  -->
 		<!-- <ScrollView class="scroller"></ScrollView> -->
-		<Require id="listview" class="listview" src="ui/listview"/>
+		<Require id="lv" class="listview" src="ui/listview" onClick="lvClick"/>
 
 	</Window>
 </Alloy>

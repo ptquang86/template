@@ -1,5 +1,5 @@
 <Alloy>
-	<View id="container" class="container">
+	<View id="container" class="b-primary container">
 		<Button id="btn" class="f-button button" onClick="btnClick"/>
 		<ActivityIndicator id="ai" class="ai"/>
 	</View>

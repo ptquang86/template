@@ -8,10 +8,6 @@ exports.unload = function() {
     unloadPaging();
 };
 
-function goBack() {
-    Alloy.Globals.WinManager.loadPrevious();
-}
-
 // ==
 
 function loadPaging() {
