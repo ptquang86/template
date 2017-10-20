@@ -23,21 +23,30 @@
 
     ".button-back[platform=ios]": { image: '/images/back.png' }
     
-    /* == TYPEFACES */
-    /*".f-display-4": { color: '#8A000000', font: { fontSize: 112, fontFamily: 'Roboto-Light' } }*/
-    /*".f-display-3": { color: '#8A000000', font: { fontSize: 56, fontFamily: 'Roboto-Regular' } }*/
-    /*".f-display-2": { color: '#8A000000', font: { fontSize: 45, fontFamily: 'Roboto-Regular' } }*/
-    /*".f-display-1": { color: '#8A000000', font: { fontSize: 34, fontFamily: 'Roboto-Regular' } }*/
-    /*".f-headline": { color: '#DE000000', font: { fontSize: 24, fontFamily: 'Roboto-Regular' } }*/
-    /*".f-title": { color: '#DE000000', font: { fontSize: 20, fontFamily: 'Roboto-Medium' } }*/
-    /*".f-subheading": { color: '#DE000000', font: { fontSize: 16, fontFamily: 'Roboto-Regular' } }*/
-    /*".f-body-2": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }*/
-    /*".f-body-1": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Regular' } }*/
-    /*".f-caption": { color: '#8A000000', font: { fontSize: 12, fontFamily: 'Roboto-Regular' } }*/
-    /*".f-button": { color: '#DE000000', font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }*/
+    /* == BACKGROUNDS */
+    ".b-accent": { backgroundColor: '#E91E63' }         // button, checkbox, cursor, text field border, text selection, progress bar
+    ".b-lighter": { backgroundColor: '#a1ccea' }        // 300
+    ".b-primary": { backgroundColor: '#79b6e1' }        // 500 - nav bar
+    ".b-primary-dark": { backgroundColor: '#66a6d9' }   // 700 - status bar
     
     /* == COLORS */
-    ".c-title": { color: '#1B5E20' }
+    ".c-accent": { color: '#E91E63' }                   // error, headline, link
+    ".c-button": { color: '#fff' }
+    ".c-text": { color: '#646464' }
+    ".c-title": { color: '#498ecd' }
+    
+    /* == TYPEFACES */
+    /*".f-display-4": { font: { fontSize: 112, fontFamily: 'Roboto-Light' } }*/
+    /*".f-display-3": { font: { fontSize: 56, fontFamily: 'Roboto-Regular' } }*/
+    /*".f-display-2": { font: { fontSize: 45, fontFamily: 'Roboto-Regular' } }*/
+    /*".f-display-1": { font: { fontSize: 34, fontFamily: 'Roboto-Regular' } }*/
+    /*".f-headline": { font: { fontSize: 24, fontFamily: 'Roboto-Regular' } }*/
+    /*".f-title": { font: { fontSize: 20, fontFamily: 'Roboto-Medium' } }*/
+    /*".f-subheading": { font: { fontSize: 16, fontFamily: 'Roboto-Regular' } }*/
+    /*".f-body-2": { font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }*/
+    /*".f-body-1": { font: { fontSize: 14, fontFamily: 'Roboto-Regular' } }*/
+    /*".f-caption": { font: { fontSize: 12, fontFamily: 'Roboto-Regular' } }*/
+    /*".f-button": { font: { fontSize: 14, fontFamily: 'Roboto-Medium' } }*/
     
     /*
 	".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }

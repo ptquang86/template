@@ -1,7 +1,7 @@
 <Alloy>
 	<View id="container" class="container">
-		<Label id="hint" class="f-body-1 hint" platform="ios"/>
-		<TextArea id="txt" class="f-body-1 txt txt-textarea" onChange="txtChange">
+		<Label id="hint" class="c-text f-body-1 hint" platform="ios"/>
+		<TextArea id="txt" class="c-text f-body-1 txt txt-textarea" onChange="txtChange">
 			<KeyboardToolbar platform="ios">
 				<Toolbar>
 					<Items>

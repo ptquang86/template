@@ -1,6 +1,6 @@
 <Alloy>
 	<View id="container" class="b-primary container">
-		<Button id="btn" class="f-button button" onClick="btnClick"/>
+		<Button id="btn" class="c-button f-button button" onClick="btnClick"/>
 		<ActivityIndicator id="ai" class="ai"/>
 	</View>
 </Alloy>

@@ -4,20 +4,20 @@
 		<!--  -->
 		<ScrollableView id="slider" class="slider">
 			<View>
-				<Label class="f-subheading slider-title">1</Label>
+				<Label class="c-text f-subheading slider-title">1</Label>
 			</View>
 			<View>
-				<Label class="f-subheading slider-title">2</Label>
+				<Label class="c-text f-subheading slider-title">2</Label>
 			</View>
 			<View>
-				<Label class="f-subheading slider-title">3</Label>
+				<Label class="c-text f-subheading slider-title">3</Label>
 			</View>
 		</ScrollableView>
 
 		<Widget id="paging" src="com.imobicloud.paging" class="slider-paging"/>
 
-		<Button class="f-button button button-facebook" onClick="loginFacebook">Facebook</Button>
-		<Button class="f-button button button-phone" onClick="loginPhone">Phone</Button>
+		<Button class="c-button f-button button button-facebook" onClick="loginFacebook">Facebook</Button>
+		<Button class="c-button f-button button button-phone" onClick="loginPhone">Phone</Button>
 
 	</Window>
 </Alloy>
