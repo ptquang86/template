@@ -1,3 +1,6 @@
+// TODO: use this for ios
+// https://github.com/loop-modules/Ti.UICollectionView
+
 // var args = $.args;
 
 exports.load = function() {
