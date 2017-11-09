@@ -8,6 +8,6 @@
         ".slider-paging-dot-on": { opacity: 1 }
         ".slider-paging-dot-off": { opacity: 0.4 }
 
-".button": { width: '50%', height: 48, bottom: 0, color: '#fff' }
+".button": { width: '50%', height: 48, bottom: 0 }
 ".button-facebook": { left: 0, backgroundColor: '#7dc2ec' }
 ".button-phone": { right: 0, backgroundColor: '#646464' }

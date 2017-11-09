@@ -40,9 +40,9 @@ var events = [];
 
 init();
 function init() {
-	var exclude = ['id', 'children', 'Border', 'Hint', 'TextArea', 'TextAreaEvents'];
+	var exclude = ['id', 'children', 'value', 'Border', 'Hint', 'TextArea', 'TextAreaEvents'];
 	$.container.applyProperties(_.omit(args, exclude));
-	
+
 	args.Border && $.border.applyProperties(args.Border);
 	if (args.Hint) {
 		if (OS_IOS) {
@@ -58,6 +58,8 @@ function init() {
 		}
 	}
 	
+	args.value && setValue(args.value);
+
 	// events
 	var TextAreaEvents = args.TextAreaEvents;
 	if (TextAreaEvents) {
@@ -71,12 +73,15 @@ function init() {
 	}
 }
 
-function getValue(value) {
+function getValue() {
 	return $.txt.value;
 }
 
 function setValue(value) {
 	$.txt.value = value;
+
+	// toggle hint text
+	toggleHint( value.length <= 0 );
 }
 
 Object.defineProperty($, 'value', {
@@ -88,11 +93,15 @@ Object.defineProperty($, 'value', {
     }
 });
 
+function toggleHint(visible) {
+	OS_IOS && $.hint[ visible ? 'show' : 'hide' ]();
+}
+
 function txtChange(e) {
 	var value = getValue();
 	
 	// toggle hint text
- 	OS_IOS && $.hint[ value.length > 0 ? 'hide' : 'show' ]();
+	toggleHint( value.length <= 0 );
 	
 	if (events.indexOf('change') != -1) {
 		$.trigger('change', { id: args.id, value: value });

@@ -1,5 +1,5 @@
 ".win": { backgroundColor: '#fff' }
-".win[platform=ios]": { statusBarStyle: Ti.UI.iOS.StatusBar.LIGHT_CONTENT }
+".win[platform=ios]": { extendSafeArea: true, statusBarStyle: Ti.UI.iOS.StatusBar.LIGHT_CONTENT }
 ".win[platform=android]": { exitOnClose: false, windowSoftInputMode: Ti.UI.Android.SOFT_INPUT_ADJUST_PAN | Ti.UI.Android.SOFT_INPUT_STATE_ALWAYS_HIDDEN }
 
 // /*
@@ -24,16 +24,16 @@
     ".button-back[platform=ios]": { image: '/images/back.png' }
     
     /* == BACKGROUNDS */
-    ".b-accent": { backgroundColor: '#E91E63' }         // button, checkbox, cursor, text field border, text selection, progress bar
-    ".b-lighter": { backgroundColor: '#a1ccea' }        // 300
+    /*".b-lighter": { backgroundColor: '#a1ccea' }        // 300*/
     ".b-primary": { backgroundColor: '#79b6e1' }        // 500 - nav bar
     ".b-primary-dark": { backgroundColor: '#66a6d9' }   // 700 - status bar
     
     /* == COLORS */
-    ".c-accent": { color: '#E91E63' }                   // error, headline, link
     ".c-button": { color: '#fff' }
+    /*".c-error": { color: '#F44336' }*/
+    /*".c-link": { color: '#E91E63' }*/
     ".c-text": { color: '#646464' }
-    ".c-title": { color: '#498ecd' }
+    ".c-title": { color: '#E91E63' }
     
     /* == TYPEFACES */
     /*".f-display-4": { font: { fontSize: 112, fontFamily: 'Roboto-Light' } }*/

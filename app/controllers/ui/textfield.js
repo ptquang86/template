@@ -36,12 +36,14 @@ var args = $.args;
 
 init();
 function init() {
-	var exclude = ['id', 'children', 'Border', 'TextField', 'TextFieldEvents'];
+	var exclude = ['id', 'children', 'value', 'Border', 'TextField', 'TextFieldEvents'];
 	$.container.applyProperties(_.omit(args, exclude));
-	
+
 	args.Border && $.border.applyProperties(args.Border);
 	args.TextField && $.txt.applyProperties(args.TextField);
 	
+	args.value && ($.txt.value = args.value);
+
 	// events
 	var TextFieldEvents = args.TextFieldEvents;
 	if (TextFieldEvents) {
