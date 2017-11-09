@@ -15,15 +15,19 @@
 		// }
 	// }
 
-	// var IsScreen320 = false, //  640 × 960
-		// IsScreen375 = false, //  750 × 1334
-		// IsScreen414 = false; // 1242 × 2208
+	// var IsIPhoneX = false,	 // 1125 × 2436 - 375 × 812
+	// 	IsScreen320 = false, //  640 × 1136 - 320 × 568
+	// 	IsScreen375 = false, //  750 × 1334 - 375 × 667
+	// 	IsScreen414 = false; // 1242 × 2208 - 414 × 736
 	// if (platformWidth >= 414) {
-		// IsScreen414 = true;
+	// 	IsScreen414 = true;
 	// } else if (platformWidth >= 375) {
-		// IsScreen375 = true;
+	// 	IsScreen375 = true;	
+	// 	if (OS_IOS && platformHeight === 812) {
+	// 		IsIPhoneX = true;
+	// 	}
 	// } else if (platformWidth >= 320) {
-		// IsScreen320 = true;
+	// 	IsScreen320 = true;
 	// }
 
 	// var originalWidth = 414;
@@ -31,6 +35,7 @@
 	// var ScreenScale = Ti.UI.create2DMatrix().scale(scaleFactor, scaleFactor);
 
   	Alloy.Globals.UI = {
+		// IsIPhoneX: IsIPhoneX,
   		// IsScreen320: IsScreen320,
   		// IsScreen375: IsScreen375,
   		// IsScreen414: IsScreen414,
